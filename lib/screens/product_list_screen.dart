@@ -15,10 +15,10 @@ class _ProductListScreenState extends State<ProductListScreen> {
   @override
   void initState() {
     super.initState();
-    // WidgetsBinding.instance.addPostFrameCallback((_) {
-    //   context.read<ProductProvider>().fetchProducts();
-    // });
-    context.read<ProductProvider>().fetchProducts();
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      context.read<ProductProvider>().fetchProducts();
+    });
+    // context.read<ProductProvider>().fetchProducts();
   }
 
   @override
