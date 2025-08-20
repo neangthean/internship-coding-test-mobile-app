@@ -63,9 +63,7 @@ class _ProductListScreenState extends State<ProductListScreen> {
                   // ),
                 ),
                 onChanged: (value) {
-                  setState(() {
-                    provider.setSearchQuery(value);
-                  });
+                  provider.setSearchQuery(value);
                 },
               ),
             ),
@@ -157,7 +155,7 @@ class _ProductListScreenState extends State<ProductListScreen> {
         onPressed: () {
           Navigator.push(
             context,
-            MaterialPageRoute(builder: (_) => const AddProductScreen()),
+            MaterialPageRoute(builder: (_) => AddProductScreen()),
           );
         },
       ),
